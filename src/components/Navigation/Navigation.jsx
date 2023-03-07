@@ -6,8 +6,8 @@ import {
 export const Navigation = () => {
   return (
     <AuthNav>
-      <Link to="/">Sign up</Link>
-      <Link to="login">Login</Link>
+      <Link to="/">SignUp</Link>
+      <Link to="login">LogIn</Link>
     </AuthNav>
   );
 };

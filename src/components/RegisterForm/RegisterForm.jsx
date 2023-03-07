@@ -49,7 +49,7 @@ export const RegisterForm = () => {
         <Title>Create account</Title>
         <Container>
           <p>Already have an account?</p>
-          <StyledLink to="/login">Log in</StyledLink>
+          <StyledLink to="/login">LogIn</StyledLink>
         </Container>
         <Label>
           Name
@@ -59,9 +59,6 @@ export const RegisterForm = () => {
             value={name}
             onChange={handleChange}
             type="name"
-            // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-            // title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-            // required
           />
           <span className="span__icon-container">
             <Name className="icon"/>
@@ -76,9 +73,6 @@ export const RegisterForm = () => {
               value={email}
               onChange={handleChange}
               type="email"
-              //   pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-              //   title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-              //   required
             />
             <span className="span__icon-container">
               <Email className="icon"/>
@@ -93,15 +87,12 @@ export const RegisterForm = () => {
             value={password}
             onChange={handleChange}
             type="password"
-            // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-            // title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-            // required
           />
           <span className="span__icon-container">
             <Password className="icon"/>
           </span>
         </Label>
-        <Button type="submit">Sign up</Button>
+        <Button type="submit">SignUp</Button>
       </Forma>
     </div>
   );

@@ -16,7 +16,6 @@ import {
 const persistConfig = {
   key: 'auth',
   storage,
-//   whitelist: ['token'],
 };
 
 

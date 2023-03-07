@@ -18,7 +18,7 @@ export const UsersMenu = () => {
   };
   return (
     <UserMenu>
-      <UserMenuContacts>{/* <Link to="/">Contacts</Link> */}</UserMenuContacts>
+      <UserMenuContacts/>
       <div className="user__menu">
         <UserName>Welcome, {name}</UserName>
         <Button type="button" onClick={handleLogOut}>

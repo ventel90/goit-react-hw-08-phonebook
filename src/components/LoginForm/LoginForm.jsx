@@ -61,10 +61,10 @@ export const LoginForm = () => {
           <Password className="icon"/>
         </span>
       </Label>
-      <Button type="submit">Log in</Button>
+      <Button type="submit">LogIn</Button>
       <Container>
         <p>Don't have a profile?</p>
-        <StyledLink to="/register">Sign up</StyledLink>
+        <StyledLink to="/register">SignUp</StyledLink>
       </Container>
     </Forma>
   );
