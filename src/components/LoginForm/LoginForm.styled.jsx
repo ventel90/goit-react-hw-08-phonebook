@@ -1,8 +1,6 @@
 import styled from '@emotion/styled';
-import {
-  MdMail,
-  MdPassword,
-} from 'react-icons/md';
+import { Form } from 'formik';
+import { MdMail, MdPassword } from 'react-icons/md';
 
 export const Label = styled.label`
   display: flex;
@@ -11,34 +9,29 @@ export const Label = styled.label`
   color: gray
   padding-top: 10px;
 `;
-export const Forma = styled.form`
- background-color: white;
+export const FormContainer = styled(Form)`
+  background-color: white;
   display: flex;
   flex-direction: column;
   background-color: fwite;
-  width: 350px;
-//   height: 100%;
+  max-width: 350px;
+
   margin: 0 auto;
-//   margin-bottom: auto;
+  margin-bottom: auto;
   margin-top: 10%;
   padding: 35px;
   border: solid 1px grey;
   border-radius: 2.5px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-//    position: absolute;             
-//    top: 50%;                        
-//    transform: translate(0, -50%) } 
 `;
 export const Button = styled.button`
   display: inline-block;
-  // max-width: 30%;
   width: 100%;
   height: 35px;
   color: white;
   border-radius: 2.5px;
   background: #26b9ff;
   margin-top: 45px;
-  //   margin-bottom: 25px;
   border: solid 1px black;
   transition: all 300ms linear;
   cursor: pointer;
@@ -54,8 +47,6 @@ export const Text = styled.p`
   width: 95%;
   padding: 20px;
   font-size: 18px;
-//   color: #26b9ff;
-//   font-weight: 400;
   margin: 0;
 `;
 

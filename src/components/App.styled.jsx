@@ -1,25 +1,99 @@
 import styled from '@emotion/styled';
 
-export const MainDiv = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  hight: 100%;
-  border: 1px solid blsck;
-`;
-export const Sections = styled.section`
-  width: 400px;
-  hight: 350px;
+const size = {
+  mobile: '320px',
+  tablet: '768px',
+};
+
+export const device = {
+  mobile: `(min-width: ${size.mobile})`,
+  tablet: `(min-width: ${size.tablet})`,
+};
+
+export const Container = styled.div`
   margin: 0 auto;
-  border: 1px solid blsck;
+  padding: 0 15px;
+  max-width: 850px;
 `;
-export const Title = styled.p`
-  width: 380px;
-  padding: 10px;
+
+export const Wrapper = styled.div`
+  display: flex;
+`;
+
+export const Title = styled.h1`
+  margin-bottom: 25px;
+
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--accent);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+  @media ${device.tablet} {
+    font-size: 44px;
+  }
+`;
+
+export const Subtitle = styled.h2`
+  margin-bottom: 20px;
+
   font-size: 32px;
-  text-align: center;
-  color: #1f5a77;
-  font-weight: bold;
-  text-align: left;
-  margin: 0;
+  font-weight: 500;
+  color: var(--accent);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+`;
+
+export const Paragraph = styled.p`
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--accent);
+`;
+
+export const Info = styled.p`
+  font-size: 14px;
+  color: #5d7479
+  
+`;
+
+export const InfoLink = styled.a`
+  position: relative;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  
+
+  transition: all 250ms ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 300ms ease-in-out;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+    background-color: var(--accent);
+    border-radius: 5px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  :hover,
+  :focus {
+    color: var(--accent);
+  }
 `;

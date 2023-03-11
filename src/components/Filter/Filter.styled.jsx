@@ -1,27 +1,46 @@
 import styled from '@emotion/styled';
-import { MdPersonSearch } from 'react-icons/md';
 
-export const Filters = styled.form`
-margin-left: 25px
+export const Wrapper = styled.div`
+  margin-bottom: 25px;
+  max-width: 100%;
 `;
+
+export const Label = styled.label`
+  display: inline-block;
+  margin-bottom: 5px;
+
+  font-size: 22px;
+  color: var(--accent);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+`;
+
 export const Input = styled.input`
-  margin-top: 10px;
-  margin-left: 25px;
-  height: 25px;
-  width: 50%;
-`;
-export const FineContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 33%;
-  height: 100%;
-  margin-right: 30px;
-  padding-top: 15px;
-  justify-content: flex-end;
-//   position: fixed;
-`;
+  padding: 15px;
+  width: 100%;
 
-export const Search = styled(MdPersonSearch)`
-  width: 20px;
-  height: 20px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+  transition: all 300ms ease-in-out;
+
+  outline: none;
+
+  &:not(:placeholder-shown) {
+    color: var(--accent);
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 `;

@@ -1,29 +1,23 @@
-import { InputContainer } from 'components/RegisterForm/RegisterForm.styled';
-import { Filters, FineContainer, Search } from './Filter.styled';
-import { Label } from 'components/Form/Form.styled';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectContactFilter } from 'redux/filter/selectors';
+import { setContactFilter } from 'redux/filter/slice';
+import { Wrapper, Label, Input } from './Filter.styled';
 
-const Filter = ({ onChange, value }) => {
+export const Filter = () => {
+  const dispatch = useDispatch();
+  const filter = useSelector(selectContactFilter);
+
   return (
-    <FineContainer>
-      <Filters>
-        <InputContainer>
-          <Label>
-            Find contacts by name
-            <input
-              className="input__form-input"
-              type="text"
-              onChange={onChange}
-              name="filter"
-              value={value}
-            ></input>
-            <span className="span__icon-container">
-              <Search className="icon"/>
-            </span>
-          </Label>
-        </InputContainer>
-      </Filters>
-    </FineContainer>
+    <Wrapper>
+      <Label htmlFor="filter">Find contact by name</Label>
+      <Input
+        name="filter"
+        type="text"
+        id="filter"
+        value={filter}
+        placeholder={' '}
+        onChange={e => dispatch(setContactFilter(e.currentTarget.value))}
+      />
+    </Wrapper>
   );
 };
-
-export default Filter;
