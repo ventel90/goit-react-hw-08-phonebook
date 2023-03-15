@@ -17,7 +17,6 @@ export const ContactsPage = () => {
     <>
       <Subtitle>New contact</Subtitle>
       <ContactForm />
-
       <Subtitle>Contacts</Subtitle>
       <Filter />
       <ContactList />

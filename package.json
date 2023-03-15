@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "formik": "^2.2.9",
+    "lazy": "^1.0.11",
     "modern-normalize": "^1.1.0",
     "nanoid": "^4.0.1",
     "prop-types": "^15.8.1",

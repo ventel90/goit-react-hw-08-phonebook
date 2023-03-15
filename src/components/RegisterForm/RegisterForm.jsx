@@ -22,20 +22,6 @@ import {
   PassWrapper,
   ShowPassBtn,
 } from 'components/RegisterForm/RegisterForm.styled';
-// import {
-//   FormContainer,
-//   Title,
-//   InputWrapper,
-//   Label,
-//   Input,
-//   Btn,
-//   ErrorMsg,
-//   IconHidden,
-//   IconShown,
-//   PassWrapper,
-//   ShowPassBtn,
-//   Name
-// } from './RegisterForm.styled';
 
 const initialValues = {
   username: '',
